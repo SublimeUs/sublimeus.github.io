@@ -2,7 +2,7 @@
 	function g(id){
 		return document.getElementById(id);
 	}
-	var value = g('text').value.length;
+	var value = g('text').value;
 	var btn = g('btn');
 	var help = g('help');
 
@@ -31,13 +31,12 @@
 	}
 
 	btn.onclick = function(){
-		// if(value==0){
-		// 	change(msg.err_require);
-		// }else 
-		if(value<4||value>16){
-			change(msg.err_length);
-		}else{
+		if(g('text').value.length>=4&&g('text').value.length<=16){
 			change(msg.right_msg);
+		}else if(g('text').value==0){
+			change(msg.err_require);
+		}else {
+			change(msg.err_length);
 		}
 	}
 
