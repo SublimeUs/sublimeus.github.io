@@ -1,0 +1,44 @@
+input[type='text']{
+	outline: none;
+	padding: 3px 5px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: 14px;
+	font-family: '微软雅黑';
+}
+button{
+	outline: none;
+	padding: 1px 10px;
+	color: #222;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: #fff;
+	cursor: pointer;
+	font-family: '微软雅黑';
+}
+button:hover{
+	background-color: #efefef;
+}
+#right-in{
+	margin-right: 20px;
+}
+#entry{
+	margin-top: 10px;
+}
+.items{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	background-color: #FF0101;
+	color: #fff;
+	font-family: '微软雅黑';
+	font-weight: 300;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 2px;
+	margin-right: 10px;
+	margin-top: 10px;
+}

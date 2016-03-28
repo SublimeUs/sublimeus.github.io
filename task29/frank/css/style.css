@@ -1,0 +1,57 @@
+.container{
+	width: 900px;
+	font-family: '黑体';
+	font-size: 30px;
+	margin:100px 50px;
+}
+.items{
+	height: 100px;
+	/*line-height: 100px;*/
+}
+.items label{
+	margin-right: 40px;
+	font-weight: bold;
+}
+input[type='text']{
+	width: 490px;
+	height: 42px;
+	outline: none;
+	border: 2px solid #CDCDCD;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 30px;
+	color: #545454;
+	font-family: '黑体';
+}
+button{
+	height: 66px;
+	font-family: '黑体';
+	font-size: 30px;
+	margin-left: 20px;
+	color: #fff;
+	background: #2F79BA;
+	padding: 0 30px;
+	border: 0;
+	border-radius:5px;
+	cursor: pointer;
+	outline: none;
+}
+#help{
+	color: #ACACAC;
+	font-family: '黑体';
+	font-size: 25px;
+	margin-left: 120px;
+	margin-top: 10px;
+}
+input.err{
+	border: 2px solid #DD0011;
+}
+div.err{
+	color: #DD0011 !important;
+}
+input.right{
+	border: 2px solid #5EBB46;
+}
+div.right{
+	color: #5EBB46 !important;;
+}

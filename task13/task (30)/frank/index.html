@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三十：表单（二）多个表单项的动态校验</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<form action="">
+			<div class="input-group">
+				<label for="">姓名 </label><input id="name" type="text" class="success">
+				<div class="waring">必填，长度为4~16个字符</div>
+			</div>
+			<div class="input-group">
+				<label for="">密码 </label><input id="password" type="password">
+				<div class="waring">必填，长度为4~16个字符</div>
+			</div>
+			<div class="input-group">
+				<label for="">密码确认 </label><input id="password-re" type="password">
+				<div class="waring">再次输入相同密码</div>
+			</div>
+			<div class="input-group">
+				<label for="">邮箱 </label><input id="email" type="email">
+				<div class="waring"></div>
+			</div>
+			<div class="input-group">
+				<label for="">手机 </label><input id="phone" type="text">
+				<div class="waring"></div>
+			</div>
+			<div class="input-group">
+				<button id="submit" type="button">提交</button>
+			</div>
+		</form>
+	</div>
+	<script src="js/task.js"></script>
+</body>
+</html>
