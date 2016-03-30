@@ -1,0 +1,151 @@
+body{
+	font-family: '微软雅黑';
+	margin: 20px;
+}
+/*表格*/
+table{
+	display: none;
+}
+.table thead tr{
+	background: #333;
+	color: #fff;
+}
+.table tr td{
+	padding: 5px 15px;
+	text-align: center;
+}
+.table tr:nth-child(2n){
+	background-color: #ddd
+}
+.table tbody tr:nth-child(1),
+.table tbody tr:nth-child(2),
+.table tbody tr:nth-child(3){
+	color: #F72727;
+}
+/*表单输入框*/
+input[type="text"]{
+	outline: none;
+	width: 200px;
+	padding: 5px 10px;
+	border:1px solid #cdcdcd;
+	border-radius: 3px;
+	font-family: 'Microsoft Yahei';
+	color: #333;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	display: none;
+}
+input[type="text"]:focus{
+	width: 300px;
+	border: 1px solid #3496FE;
+	box-shadow: 0 0 3px #3496FE;
+}
+/*轮播图*/
+.wrap{
+	margin-top: 50px;
+	width: 300px;
+	height: 150px;
+	position: relative;
+}
+.content{
+	width: 300px;
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+@keyframes scroll{
+	0%{
+		left: 100%;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	100%{
+		left: 0;
+		opacity: 1;
+		filter: alpha(opacity=1);
+	}
+}
+@-webkit-keyframes scroll{
+	0%{
+		left: 100%;
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	100%{
+		left: 0;
+		opacity: 1;
+		filter: alpha(opacity=1);
+	}
+}
+.sliders{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	-webkit-transition: all .5s;
+		 -o-transition: all .5s;
+			transition: all .5s;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	text-align: center;
+	line-height: 150px;
+	font-size: 60px;
+	color: #fff;
+}
+.slider-1{
+	background-color: #f24423;
+	z-index: 200
+}
+.slider-2{
+	background-color: #126a03;
+}
+.slider-3{
+	background-color: #e10423;
+
+}
+.sliders:target {
+	animation: scroll .5s ease-in-out;
+	z-index: 200
+}
+.controll{
+	position: absolute;
+	z-index: 1500;
+	right: 0;
+	bottom: 0;
+}
+.controll:before,
+.controll:after{
+	content: '';
+	display: block;
+	clear: bot
+}
+.items{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: rgba(0,0,0,0.3);
+	filter: alpha(opacity=30);
+	text-align: center;
+	line-height: 32px;
+	float: left;
+	margin-left: 2px;
+}
+.items a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	z-index: 1100;
+}
+.items-1{
+
+}
+.items-2{
+
+}
+.items-3{
+	
+}
