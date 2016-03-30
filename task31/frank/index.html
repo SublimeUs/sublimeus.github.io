@@ -8,10 +8,16 @@
 <body>
 <div class="wrap">
 	<div class="input-group">
-		<input id="yes" type="radio" name="school" value="school"> 在校生
-			<span> </span>
-		<input id="no" type="radio" name="school" value="noschool"> 非在校生
-		<div id="sc" class="sc">
+		<div class="input-radio">
+			<input id="yes" type="radio" name="school" value="school" checked> 
+			<span class="input-style"></span>在校生
+		</div>
+		<div class="input-radio">
+			<input id="no" type="radio" name="school" value="noschool"> 
+			<span class="input-style"></span>非在校生
+		</div>
+	</div>
+	<div id="sc" class="sc">
 			<label for="">学校</label>
 			<select name="" id="city-select">
 			</select>
@@ -22,7 +28,6 @@
 			<label for="">就业单位</label>
 			<input type="text">
 		</div>
-	</div>
 </div>
 <script src="js/task.js"></script>
 </body>
