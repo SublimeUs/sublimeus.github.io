@@ -3,9 +3,6 @@ body{
 	margin: 20px;
 }
 /*表格*/
-table{
-	display: none;
-}
 .table thead tr{
 	background: #333;
 	color: #fff;
@@ -24,6 +21,7 @@ table{
 }
 /*表单输入框*/
 input[type="text"]{
+	margin-top: 30px;
 	outline: none;
 	width: 200px;
 	padding: 5px 10px;
@@ -34,7 +32,6 @@ input[type="text"]{
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
-	display: none;
 }
 input[type="text"]:focus{
 	width: 300px;
