@@ -1,20 +1,32 @@
-
-var single = function(){
-	var pro1 = '私有变量1';
-	var pro2 = '私有变量2';
-	function showPriv(){
-		console.log('这是私有函数调用的--------');
-		console.log(pro1);
+function g(id){
+	return document.getElementById(id);
+}
+function getClass(parent,cls){
+	var parent = parent||document;
+	var ele = document.getElementById(parent).getElementsByTagName('*');
+	var arr=[];
+	for(var i=0;i<ele.length;i++){
+		if(ele[i].className==cls){
+			arr.push(ele[i]);
+		}
 	}
-	return {
-		publicMethod:function(){
-			showPriv();
-		},
-		publicVar:'the public can see this!'
+	return arr;
+}
+var ele = getClass('F-Modal','modal-head');
+
+var Modal = function(id,data){
+	if(this instanceof Modal)
+	{
+		this.id=id;
+		this.data=data;
+	}else{
+		return new Modal(id,data);
 	}
 }
-var s = new single();
-s.publicMethod();
-console.log(s.publicVar);
 
+Modal.prototype = {
+	init:function(){
 
+	}
+	
+}
