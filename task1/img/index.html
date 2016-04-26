@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js 页面分析</title>
+</head>
+<body onunload="bye()">
+	<a href="other.html"> 跳转 </a>
+<script type="text/javascript"> 
+
+	/* 页面url地址 */
+	document.write(location.href+"<br>"); 
+
+	/* 页面停留时间 */
+	pageopen = new Date();
+	function bye() {
+		pageclose = new Date();
+		minutes = (pageclose.getMinutes() - pageopen.getMinutes());
+		seconds = (pageclose.getSeconds() - pageopen.getSeconds());
+		time = (seconds + (minutes * 60));
+		if (time == 1) {
+		time = (time + " 秒钟");
+		}
+		else {
+		time = (time + " 秒钟");
+		   }
+		console.log('您在这儿呆了' + time + '.欢迎再来!');
+	} 
+
+	/*浏览器设备*/
+	console.log(window.navigator.language);		//用户语言，
+	console.log(window.navigator.userAgent.substring(12));	//用户设备信息
+
+</script>
+</body>
+</html>
